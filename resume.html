@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oskar Korczak - Resume</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f7f7f9;
+        color: #222;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        padding: 40px 32px 32px 32px;
+      }
+      .top-section {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 32px;
+      }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #e0e0e0;
+        margin-bottom: 0;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .top-text {
+        flex: 1;
+      }
+      h1 {
+        text-align: left;
+        margin-bottom: 8px;
+        font-size: 2.5rem;
+      }
+      .contact {
+        text-align: left;
+        margin-bottom: 18px;
+        color: #555;
+      }
+      .summary {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        text-align: left;
+        color: #333;
+      }
+      h2 {
+        color: #2d6cdf;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 4px;
+        margin-top: 36px;
+        margin-bottom: 18px;
+      }
+      h3 {
+        margin-bottom: 2px;
+        margin-top: 24px;
+        color: #1a3a6b;
+      }
+      .role {
+        font-weight: bold;
+        color: #444;
+        margin-bottom: 2px;
+      }
+      .period {
+        color: #888;
+        font-size: 0.98em;
+        margin-bottom: 10px;
+      }
+      ul {
+        margin-top: 0;
+        margin-bottom: 18px;
+        padding-left: 22px;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 16px;
+        }
+        .top-section {
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+        .profile-img {
+          margin-bottom: 8px;
+        }
+        .top-text {
+          width: 100%;
+        }
+        h1,
+        .contact,
+        .summary {
+          text-align: center;
+        }
+      }
+      @media print {
+        body {
+          background: #fff !important;
+          color: #000 !important;
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+          box-shadow: none !important;
+          background: #fff !important;
+          border: none !important;
+          margin: 0 auto !important;
+          padding: 0 18px 18px 18px !important;
+          max-width: 100% !important;
+          page-break-inside: avoid;
+        }
+        @page {
+          margin: 0.7cm 0.7cm 0.7cm 0.7cm;
+        }
+        a {
+          color: #000 !important;
+          text-decoration: underline;
+        }
+        .profile-img {
+          border: none !important;
+        }
+        h1,
+        h2,
+        h3 {
+          color: #000 !important;
+        }
+        .company-logo {
+          height: 22px !important;
+          margin-right: 6px !important;
+        }
+        .job-details {
+          margin-left: 28px !important;
+        }
+      }
+      .company-logo {
+        height: 28px;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+      .job-details {
+        margin-left: 36px;
+      }
+      .job-details ul li {
+        margin-bottom: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-section">
+        <img src="oskar-korczak.jpg" alt="Oskar Korczak" class="profile-img" />
+        <div class="top-text">
+          <h1>Oskar Korczak</h1>
+          <div
+            class="location"
+            style="text-align: left; color: #555; margin-bottom: 10px"
+          >
+            Warsaw, Poland
+          </div>
+
+          <div class="contact">
+            <a href="https://linkedin.com/in/oskar-korczak" target="_blank"
+              >linkedin.com/in/oskar-korczak</a
+            >
+            |
+            <a href="https://github.com/oskarissimus" target="_blank"
+              >github.com/oskarissimus</a
+            >
+            |
+            <a href="https://korczak.xyz" target="_blank">korczak.xyz</a>
+            <br />
+            <a href="mailto:email"
+              >email</a
+            >
+            | <a href="tel:tel">tel</a>
+          </div>
+          <div class="summary">
+            Seasoned SWE with strong Python, TS and DevOps. Built ML pipeline
+            for ID recognition in KYC process in fintech. Set up and maintained
+            on-premise Kubernetes cluster. Active in local meet-ups with talks
+            and projects.
+          </div>
+        </div>
+      </div>
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, TypeScript, JavaScript, Bash, SQL</li>
+        <li>FastAPI, Django, React, Redux, HTML, CSS</li>
+        <li>
+          Docker, Kubernetes, Helm, Git, Linux, Nginx, Terraform, GCP, AWS
+        </li>
+        <li>
+          PowerBI, PostgreSQL, Apache Solr, LDAP, Hasura, Firebase, Substrate
+        </li>
+        <li>
+          DevOps, CI/CD, Async programming, Stream processing, Data pipelines
+        </li>
+        <li>Mentoring, Code review, Technical documentation</li>
+        <li>
+          Soft skills: Communication, teamwork, leadership, problem solving,
+          adaptability.
+        </li>
+      </ul>
+      <h2>Experience</h2>
+      <h3>
+        <img
+          src="holisticon_poland_logo.jpeg"
+          alt="Holisticon logo"
+          class="company-logo"
+        />Holisticon
+      </h3>
+      <div class="job-details">
+        <div class="role">Senior Software Engineer</div>
+        <div class="period">Jun 2023 - Present (2 years)</div>
+        <ul>
+          <li>
+            Maintained and improved bioinformatic genomics pipelines with
+            Python, Django, Bash, and BDS.
+          </li>
+          <li>Created PowerBI data visualizations with PostgreSQL in AWS</li>
+          <li>Optimised 100x amount of queries and 10x page load times</li>
+        </ul>
+      </div>
+      <h3>
+        <img
+          src="devs_mentoring.jpeg"
+          alt="Devs-Mentoring logo"
+          class="company-logo"
+        />Devs-Mentoring
+      </h3>
+      <div class="job-details">
+        <div class="role">Mentor</div>
+        <div class="period">Sep 2022 - Jan 2025 (2 years 4 months)</div>
+        <ul>
+          <li>
+            Mentored frontend developers, teaching GIT, HTML, CSS, JS, React,
+            Redux, resulting in successful career transformations.
+          </li>
+          <li>
+            Assigned and reviewed programming tasks, fostering confidence and
+            practical proficiency.
+          </li>
+          <li>
+            Aided mentees in developing personal projects, enhancing portfolios
+            and job prospects
+          </li>
+          <li>
+            Conducted code-reviews and promoted best practices, improving code
+            quality and performance
+          </li>
+        </ul>
+      </div>
+      <h3>
+        <img
+          src="neontri_logo.jpeg"
+          alt="Neontri logo"
+          class="company-logo"
+        />Neontri
+      </h3>
+      <div class="job-details">
+        <div class="role">Python developer</div>
+        <div class="period">Feb 2022 - Dec 2022 (11 months)</div>
+        <ul>
+          <li>
+            Created a REST API facade for full-text search in large datasets,
+            streamlining data access and enhancing query performance.
+          </li>
+          <li>
+            Optimised 10x time and resources (memory, VM time) of data service
+            with stream processing and async Python
+          </li>
+          <li>
+            Optimised 5x time to obtain data from web service with enabling of
+            HTTP2
+          </li>
+          <li>
+            Python, FastAPI, Pytest, Async Python, Apache Solr, OAuth2, Docker,
+            GCP, Terraform, Strawberry GraphQL
+          </li>
+        </ul>
+      </div>
+      <h3>
+        <img
+          src="igoria_trade.jpeg"
+          alt="Igoria Trade logo"
+          class="company-logo"
+        />Igoria Trade
+      </h3>
+      <div class="job-details">
+        <div class="role">Blockchain developer</div>
+        <div class="period">Mar 2021 - Apr 2022 (1 year 2 months)</div>
+        <ul>
+          <li>
+            Helped to secure 10M PLN research grant by preparing technical
+            documentation for the project
+          </li>
+          <li>
+            Led transition from SVN to GIT, enabling productivity increase of
+            entire team
+          </li>
+          <li>
+            Reduced 10x time consumed to release application, by automating
+            processes and fostering DevOps culture
+          </li>
+          <li>
+            Python, FastAPI, LDAP, Docker, Kubernetes, Helm, GitLab, Hasura,
+            React, Vue.js, Firebase, Substrate
+          </li>
+        </ul>
+        <div class="role">Software Engineer</div>
+        <div class="period">May 2020 - Feb 2021 (10 months)</div>
+        <ul>
+          <li>
+            Developed and maintained video verification application, reducing 2x
+            time to verify customer, resulting in improved conversion rate
+          </li>
+          <li>
+            Focused on video streaming, image processing, and neural network
+            model training for document classification.
+          </li>
+          <li>
+            Backend: Python, Asyncio, REST API, FastAPI, SQLAlchemy, MSSQL;
+            Frontend: JavaScript, React, WebRTC; DevOps: Docker, Kubernetes,
+            Object Storage, Linux, Nginx.
+          </li>
+        </ul>
+        <div class="role">Admin IT</div>
+        <div class="period">Jun 2019 - Mar 2020 (10 months)</div>
+        <ul>
+          <li>Administered services, workstations, and WordPress websites.</li>
+          <li>
+            Used Linux, Apache, PHP, MySQL, MSSQL, Nginx, Python, JavaScript
+          </li>
+        </ul>
+      </div>
+      <div
+        class="gdpr-consent"
+        style="font-size: 0.92em; color: #888; margin-top: 32px"
+      >
+        I hereby give consent for my personal data included in my application to
+        be processed for the purposes of the recruitment process in accordance
+        with Regulation (EU) 2016/679 of the European Parliament and of the
+        Council of 27 April 2016 (General Data Protection Regulation).
+      </div>
+    </div>
+  </body>
+</html>
